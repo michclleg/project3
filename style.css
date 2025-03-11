@@ -56,16 +56,16 @@ body {
 }
 **/
 .gallery {
-	position: relative;
 	display:grid;
-	grid-template-columns: repeat(auto-fit,minmac(200px,1fr));
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 	gap: 15px;
 	grid-auto-flow: dense;
 	margin:auto;
 }
 
 .photo img{
-	width: 150px;
+	width: 100%;
+	max-width: 200px;
 	height:auto;
 	display:block;
 	border-radius:8px;
