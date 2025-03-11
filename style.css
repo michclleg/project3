@@ -48,17 +48,29 @@ body{
   margin-left: 15px;
 }
 
-#gallery{
+#gallery {
 	display:grid;
 	grid-template-columns: repeat(auto-fit,minmac(200px,1fr));
 	gap: 15px;
+	grid-auto-flow: dense;
 	margin:auto;
-	
 }
+
 #photo img{
 	width: 150px;
 	height:auto;
 	display:block;
 	border-radius:8px;
 	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#photo:hover img {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
