@@ -51,7 +51,7 @@ body{
   margin-left: 15px;
 }
 
-#gallery {
+.gallery {
 	position: relative;
 	display:grid;
 	grid-template-columns: repeat(auto-fit,minmac(200px,1fr));
@@ -60,7 +60,7 @@ body{
 	margin:auto;
 }
 
-#photo img{
+.photo {
 	width: 150px;
 	height:auto;
 	display:block;
@@ -68,7 +68,7 @@ body{
 	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-#photo:hover img{
+.photo:hover{
     transform: scale(1.05);
     opacity: 0.8;
 }
