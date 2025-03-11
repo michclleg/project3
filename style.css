@@ -3,7 +3,7 @@ body{
 }
 
 #header h1 {
-  position: relative;
+  position: absolute;
   top:5px;
   font-size: 3em;
   font-family: Garamond, serif;
@@ -52,6 +52,7 @@ body{
 }
 
 #gallery {
+	position: relative;
 	display:grid;
 	grid-template-columns: repeat(auto-fit,minmac(200px,1fr));
 	gap: 15px;
