@@ -43,10 +43,6 @@ body{
   color: #C6D3CD;
 }
 
-#content-wrapper {
-  background-color: ;
-  float: left;
-}
 #main-content {
   min-height: 300px;
   width: 715px;
@@ -63,7 +59,7 @@ body{
 	margin:auto;
 }
 
-#photo img{
+img.photo {
 	width: 150px;
 	height:auto;
 	display:block;
@@ -71,7 +67,7 @@ body{
 	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-#photo:hover img {
+img.photo:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
