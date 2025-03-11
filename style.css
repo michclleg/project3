@@ -48,14 +48,14 @@ body{
   margin-left: 15px;
 }
 
-.gallery{
+#gallery{
 	display:grid;
 	grid-template-columns: repeat(auto-fit,minmac(200px,1fr));
 	gap: 15px;
 	margin:auto;
 	
 }
-.photo img{
+#photo img{
 	width: 150px;
 	height:auto;
 	display:block;
