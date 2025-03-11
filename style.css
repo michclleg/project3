@@ -3,8 +3,7 @@ body{
 }
 
 #header h1 {
-  position: absolute;
-  left: 420px;
+  position: relative;
   top:5px;
   font-size: 3em;
   font-family: Garamond, serif;
