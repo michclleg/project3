@@ -1,7 +1,7 @@
-body{
+body {
 	background-color: #C6D3CD;
 }
-
+/**
 #header h1 {
   position: absolute;
   top:5px;
@@ -14,7 +14,7 @@ body{
   font-family: Garamond, serif;
 }
 
-#navbar-container{
+#navbar-container {
   float: left;
   width: 100%;
   position: relative;
@@ -54,7 +54,7 @@ body{
   float: left;
   margin-left: 15px;
 }
-
+**/
 .gallery {
 	position: relative;
 	display:grid;
@@ -72,7 +72,7 @@ body{
 	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.photo:hover{
+.photo:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
