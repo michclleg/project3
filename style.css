@@ -62,12 +62,17 @@ body {
 	grid-auto-flow: dense;
 	margin:auto;
 }
+.photo {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+}
 
 .photo img{
-	width: 100%;
-	max-width: 200px;
-	height:auto;
-	display:block;
+	width: auto;
+	height: 300px;
+	object-fit: cover;
 	border-radius:8px;
 	transition: transform 0.3s ease, opacity 0.3s ease;
 }
