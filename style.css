@@ -1,7 +1,7 @@
 body {
 	background-color: #C6D3CD;
 }
-/**
+
 #header h1 {
   position: absolute;
   top:5px;
@@ -54,7 +54,8 @@ body {
   float: left;
   margin-left: 15px;
 }
-**/
+
+/**
 .gallery {
 	display:grid;
 	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
@@ -87,3 +88,4 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
+**/
