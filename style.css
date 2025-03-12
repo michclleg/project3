@@ -12,18 +12,20 @@ body {
 #header h1{
 	font-size: 3em;
 	font-family: Garamond, serif;
-	animation: fadeIn 1s ease-in-out;
 	color: #3F5160;
-	margin:auto;
+	text-align:center;
+	text-shadow: 0px 4px 10px rgba(0,0,0,0.2)
 }
 
 #main-nav {
-  background-color:#3F5160;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  background-color: #3F5160;
   font-family: Garamond, serif;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 20px 20px;
+  animation: glow 2s infinite alternate;
+  border: 2px solid #3a454f;
 }
 
 #main-nav ul {
@@ -52,47 +54,66 @@ body {
 #main-content {
   min-height: 300px;
   width: 715px;
-  color: #253039;
   margin: 0 auto;
   padding:15px;
+  animation: fadeIn 1s ease-in-out;
+  color: #C6D3CD;
 }
 
-@keyframes fadeIn{
+.back {
+	background-color: #3F5160;
+	box-shadow: 0px 4px 10px rgba(0,0,0,0.2), inset 0px 4px 10px rgba(255,255,255,0.2);
+	border-radius: 10px;
+	padding: 20px;
+	border: 2px solid #3a454f;
+}
+
+.back:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
 	from{opacity: 0; transform: translateY(20px);}
 	to{opacity:1; transform:translateY(0);}
 }
+@keyframes glow{
+	0%{box-shadow: 0 0 5px #3a454f;}
+	50%{box-shadow: 0 0 15px #3a454f;}
+	100%{box-shadow: 0 0 5px #3a454f;}
+}
 
-/**
 .gallery {
 	display:grid;
-	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-	gap: 15px;
-	grid-auto-flow: dense;
-	margin:auto;
-}
-.photo {
-	display: flex;
-	justify-content:center;
-	align-items:center;
-	height:100%;
+	grid-template-columns: 300px 300px 300px;
+	grid-auto-rows:auto;
+	gap: 10px;
+	margin: auto;
+	max-width: 900px;
+	padding:10px;
 }
 
-.photo img{
-	width: auto;
-	height: 300px;
+.lphoto img {
+	width: 920px;
+	height: auto;
 	object-fit: cover;
-	border-radius:8px;
 	transition: transform 0.3s ease, opacity 0.3s ease;
 }
+.lphoto {
+	margin-left:auto;
+	margin-right:auto;
+	max-width:920px;
+	box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
 
-.photo:hover img{
+.hphoto img {
+	object-fit: cover;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	max-width: 300px;
+}
+
+.hphoto:hover img, 
+.lphoto:hover img {
     transform: scale(1.05);
-    opacity: 0.8;
+	opacity: 0.8;
 }
-
-@media (max-width: 600px) {
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
-**/
