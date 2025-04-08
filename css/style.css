@@ -1,7 +1,7 @@
 /**Main body and headers**/
 body {
   background-attachment:fixed;
-  background-image:url(".images/background.png");	
+  background-image:url("../images/background.png");	
 }
 /** Navigation Bar **/
 #nav-bar {
