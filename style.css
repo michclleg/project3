@@ -60,7 +60,7 @@ body {
 /** Main Content **/
 #content {
   width:920px;
-  margin: auto;
+  margin:auto;
   padding:25px;
   animation:fadeIn 1s ease-in-out;
 }
@@ -79,7 +79,6 @@ body {
 .longphoto img {
   width:920px;
   height:auto;
-  margin:auto;
   object-fit:cover;
   border-radius:10px;
   box-shadow:0px 4px 10px rgba(0,0,0,0.2);
@@ -87,7 +86,7 @@ body {
 }
 
 .longphoto {
-  margin:auto;
+  margin-top:20px;
   max-width:920px;
 }
 
@@ -100,12 +99,11 @@ body {
 
 .gallery {
   display:grid;
-  padding:0px;
-  max-width:900px;
+  max-width:920px;
   grid-template-columns:300px 300px 300px;
   grid-auto-rows:auto;
   gap:10px;
-  margin:auto;
+  margin-top:20px;
 }
 
 #maintextbox:hover {
