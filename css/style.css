@@ -148,7 +148,7 @@ body {
 }
 
 @keyframes glow{
-  0%{box-shadow:0 0 10px white;}
+  0%{box-shadow:0 0 10px #ffecf5;}
   50%{box-shadow:0 0 25px white;}
-  100%{box-shadow:0 0 10px white;}
+  100%{box-shadow:0 0 10px #ffecf5;}
 }
