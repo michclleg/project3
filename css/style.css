@@ -58,6 +58,21 @@ body {
   background:radial-gradient(circle,white, rgba(0, 0, 0, 0.0));
 }
 /** Main Content **/
+#container {
+	display:flex;
+	width:100%;
+}
+
+#sidebarl {
+  padding:20px;
+  left:1.5%;
+  background:radial-gradient(circle,#f9caed,rgba(255, 255, 255, 0.3));
+  height:75%;
+  margin:auto;
+  width:15%;
+  animation:glow 3s infinite alternate;
+}
+
 #content {
   width:920px;
   margin:auto;
@@ -106,7 +121,19 @@ body {
   margin-top:20px;
 }
 
-#maintextbox:hover {
+#sidebarr {
+  padding:20px;
+  right:1.5%;
+  background:radial-gradient(circle,#f9caed,white);
+  height:75%;
+  margin:auto;
+  width:15%;
+  animation:glow 3s infinite alternate;
+}
+
+#sidebarl:hover, 
+#maintextbox:hover,
+#sidebarr:hover {
   transform:scale(1.02);
   transition:0.3s ease-in-out;
 }
