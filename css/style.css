@@ -103,6 +103,22 @@ body {
   background:radial-gradient(circle,white,rgba(255, 255, 255, 0.3));
 }
 
+.textbox h2 {
+	margin-bottom:10px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.textbox ul {
+  padding-left: 20px;
+  margin-bottom: 0;	
+}
+.textbox li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+  list-style-type: disc;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
 .longphoto img {
   max-width:100%;
   height:auto;
@@ -172,6 +188,7 @@ body {
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+	0%{opacity: 1;}
+	50%{opacity: 0.4;}
+	100%{opacity: 1;}
 }
