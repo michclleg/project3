@@ -1,3 +1,11 @@
+/**css Reset**/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /**Main body and headers**/
 body {
   height:100%;
@@ -26,7 +34,7 @@ body {
 }
 
 #nav-bar li {
-  font-family:Garamond, serif;
+  font-family: 'Playfair Display', serif;
   padding: 10px 15px;
 }
 
@@ -60,9 +68,10 @@ body {
 }
 /** Main Content **/
 #container {
-	display:flex;
-	width:100%;
-	height:100%;
+  display:flex;
+  width:100%;
+  height:100%;
+  animation:fadeIn 1s ease-in-out;
 }
 
 #sidebarl {
@@ -80,7 +89,6 @@ body {
   width:70%;
   margin:auto;
   padding:15px 25px;
-  animation:fadeIn 1s ease-in-out;
 }
 
 .textbox {
