@@ -34,7 +34,8 @@ body {
 }
 
 #nav-bar li {
-  font-family: 'Playfair Display', serif;
+  font-family:'Playfair Display', serif;
+  font-size:25px;
   padding: 10px 15px;
 }
 
