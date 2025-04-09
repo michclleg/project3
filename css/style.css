@@ -127,7 +127,7 @@ body {
   grid-template-columns:32% 32% 32%;
   grid-auto-rows:auto;
   gap:2%;
-  margin-top:20px;
+  margin:20px;
 }
 
 #sidebarr {
