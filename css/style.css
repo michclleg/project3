@@ -65,7 +65,7 @@ body {
 }
 
 #sidebarl {
-  padding:20px;
+  padding:15px 25px;
   left:1.5%;
   background:radial-gradient(circle,#f9caed,rgba(255, 255, 255, 0.3));
   height:75%;
@@ -78,7 +78,7 @@ body {
 #content {
   width:70%;
   margin:auto;
-  padding:25px;
+  padding:15px 25px;
   animation:fadeIn 1s ease-in-out;
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 #sidebarr {
-  padding:20px;
+  padding:15px 25px;
   right:1.5%;
   background:radial-gradient(circle,#f9caed,rgba(255, 255, 255, 0.3));
   height:75%;
