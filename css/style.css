@@ -82,7 +82,7 @@ body {
   animation:fadeIn 1s ease-in-out;
 }
 
-#maintextbox {
+.textbox {
   max-width:100%;
   color:#f35594;	
   margin:auto;
