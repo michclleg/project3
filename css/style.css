@@ -68,7 +68,7 @@ body {
   padding:15px 25px;
   left:1.5%;
   background:radial-gradient(circle,#f9caed,rgba(255, 255, 255, 0.3));
-  height:100%;
+  min-height:100%;
   margin:auto;
   width:15%;
   animation:glow 3s infinite alternate;
@@ -135,7 +135,7 @@ body {
   padding:25px;
   right:1.5%;
   background:radial-gradient(circle,#f9caed,rgba(255, 255, 255, 0.3));
-  height:100%;
+  min-height:100%;
   margin:auto;
   width:15%;
   animation:glow 3s infinite alternate;
