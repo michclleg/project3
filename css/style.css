@@ -193,9 +193,11 @@ body {
 @media only screen and (max-width: 600px) {
   #nav-bar {grid-area: 1 / span 6;}
   .textbox {grid-area: 2 / span 6;}
-  .gallery {grid-area: 3 / span 6;}
+  .longphoto {grid-area: 3 / span 6;}
+  .gallery {grid-area: 4 / span 6;}
   
-  
+  #nav-bar img:first-child,
+  #nav-bar img:last-child,
   #sidebarr,
   #sidebarl {
 	display: none;
