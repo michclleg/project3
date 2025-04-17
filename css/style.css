@@ -94,8 +94,8 @@ body {
 }
 
 .textbox h2 {
-	margin-bottom:10px;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom:10px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .textbox ul {
