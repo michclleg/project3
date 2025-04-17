@@ -173,7 +173,7 @@ body {
   opacity:0.8;
 }
 
-@keyframes glow{
+@keyframes glow {
   0%{box-shadow:0 0 10px #ffecf5;}
   50%{box-shadow:0 0 25px white;}
   100%{box-shadow:0 0 10px #ffecf5;}
@@ -183,4 +183,17 @@ body {
 	0%{opacity: 1;}
 	50%{opacity: 0.6;}
 	100%{opacity: 1;}
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-bar {grid-area: 1 / span 6;}
+  .textbox {grid-area: 2 / span 6;}
+  .gallery {grid-area: 3 / span 6;}
+  
+  
+  #sidebarr,
+  #sidebarl {
+	display: none;
+  }
+  
 }
