@@ -14,7 +14,7 @@ function map() {
   });
 
   const info = new google.maps.InfoWindow({
-    content: "<h2>This is a map</h2>" // Feature 3
+    content: "<h2>This is a map</h2>"
   });
 
   marker.addListener("click", () => {
