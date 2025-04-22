@@ -185,8 +185,18 @@ body {
 	100%{opacity: 1;}
 }
 
+#leftside {
+	max-width:30%;
+	max-height:100%;
+}
+
+#rightside {
+	max-width:70%;
+	max-height:100%;
+}
+
 .smalltextbox {
-  max-width:30%;
+  max-width:100%;
   max-height:30%;
   color:#f35594;	
   margin-top:10px;
@@ -199,7 +209,7 @@ body {
 }
 
 #imagecar {
-  max-width:30%;
+  max-width:100%;
   max-height:70%;
   margin-top:10px;
   margin-bottom:20px;	
@@ -217,7 +227,6 @@ body {
   border-radius:20px;
   padding:20px;
   box-shadow:0px 4px 10px rgba(0,0,0,0.2), inset 0px 4px 10px rgba(255,255,255,0.2);
-	
 }
 
 #map {
