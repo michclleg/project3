@@ -38,17 +38,14 @@ document.addEventListener("DOMContentLoaded", function () {
 			item.classList.toggle('active', index===i);
 		});
 	}
-	
 	leftbtn.addEventListener('click',() => {
 		cur=(cur-1+imagec.length) % imagec.length;
 		showProject(cur);
 	});
-	
 	rightbtn.addEventListener('click',() => {
 		cur=(cur+1) % imagec.length;
 		showProject(cur);
 	});
-	
 	showProject(cur);
 	
 }
