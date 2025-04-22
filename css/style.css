@@ -190,6 +190,11 @@ body {
 	height: 500px;
 }
 
+#container {
+	margin:auto;
+	padding:15px 20px;
+}
+
 @media only screen and (max-width: 600px) {
   #nav-bar {grid-area: 1 / span 6;}
   .textbox {grid-area: 2 / span 6;}
