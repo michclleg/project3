@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const rightbtn=document.querySelector('.rbtn');
 	let cur=0;
 	
-	function showProject(i){
-		projects.forEach((item, index) => {
+	function showImage(i){
+		imagecar.forEach((item, index) => {
 			item.classList.toggle('this', index===i);
 		});
 	}
@@ -42,14 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	if(leftbtn&&rightbtn&&imagecar.length){
 	  leftbtn.addEventListener('click',() => {
 		cur=(cur-1+imagecar.length) % imagecar.length;
-		showProject(cur);
+		showImage(cur);
 	});
 	
 	rightbtn.addEventListener('click',() => {
 		cur=(cur+1) % imagecar.length;
-		showProject(cur);
+		showImage(cur);
 	});
 	
-	showProject(cur);
+	showImage(cur);
 	}
 })
