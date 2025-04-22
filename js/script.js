@@ -26,3 +26,22 @@ function initMap(){
     info.open(map, marker);
   });
 }
+
+document.addEventListener('',() => {
+	const imagec=document.querySelectorAll('.imgplaces');
+	const leftbtn=document.querySelector('.lbtn');
+	const rightbtn=document.querySelector('rbtn');
+	let cur=0;
+	
+	function showProject(i){
+		projects.forEach((item, index) => {
+			item.classList.toggle('active', index===i);
+		});
+	}
+	
+	leftbtn.addEventListener('click',() => {
+		cur=(cur-1+imagec.length) % imagec.length;
+		showProject(cur);
+	})
+	
+}
