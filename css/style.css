@@ -233,8 +233,12 @@ body {
   color:white;
 }
 
-.rbtn{
-	right:0;
+.lbtn {
+  margin-right: 10px;
+}
+  
+.rbtn {
+  margin-left: 10px;
 }
 
 .lbtn:hover,
