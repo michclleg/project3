@@ -27,7 +27,7 @@ function initMap(){
   });
 }
 
-document.addEventListener('',() => {
+document.addEventListener("DOMContentLoaded", function () {
 	const imagec=document.querySelectorAll('.imgplaces');
 	const leftbtn=document.querySelector('.lbtn');
 	const rightbtn=document.querySelector('rbtn');
@@ -42,6 +42,13 @@ document.addEventListener('',() => {
 	leftbtn.addEventListener('click',() => {
 		cur=(cur-1+imagec.length) % imagec.length;
 		showProject(cur);
-	})
+	});
+	
+	rightbtn.addEventListener('click',() => {
+		cur=(cur+1) % imagec.length;
+		showProject(cur);
+	});
+	
+	showProject(cur);
 	
 }
