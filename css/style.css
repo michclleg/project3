@@ -211,17 +211,21 @@ body {
 }
 
 #imagecar {
-  display:none;
   max-width:100%;
   max-height:70%;
   margin-top:10px;
   margin-bottom:20px;	
+  position:relative;
 }
 
 .imgplaces img{
   border-radius:10px;
   max-width:100%;
   object-fit:cover;
+}
+
+.imgplaces.active {
+  display: block;
 }
 
 .lbtn,
