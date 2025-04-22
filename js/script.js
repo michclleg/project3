@@ -30,7 +30,7 @@ function initMap(){
 document.addEventListener("DOMContentLoaded", function () {
 	const imagec=document.querySelectorAll('.imgplaces');
 	const leftbtn=document.querySelector('.lbtn');
-	const rightbtn=document.querySelector('rbtn');
+	const rightbtn=document.querySelector('.rbtn');
 	let cur=0;
 	
 	function showProject(i){
@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		cur=(cur-1+imagec.length) % imagec.length;
 		showProject(cur);
 	});
+	
 	rightbtn.addEventListener('click',() => {
 		cur=(cur+1) % imagec.length;
 		showProject(cur);
@@ -51,4 +52,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	showProject(cur);
 	}
-}
+});
