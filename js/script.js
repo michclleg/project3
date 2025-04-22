@@ -1,4 +1,4 @@
-function map(){
+function initMap(){
   const loc={lat:41, lng:-87};
 
   const maps=new google.maps.Map(document.getElementById("map"),{
@@ -10,7 +10,7 @@ function map(){
   
   const marker=new google.maps.Marker({
     position:loc,
-    map:map,
+    map:maps,
 	title:"This is IIT",
 	icon: {
 		url:'images/nav.png',
