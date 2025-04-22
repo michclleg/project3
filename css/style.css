@@ -198,11 +198,17 @@ body {
   background:radial-gradient(circle,white,rgba(255, 255, 255, 0.3));
 }
 
-.imagecar {
+#imagecar {
   max-width:30%;
   max-height:100%;
   margin-top:10px;
   margin-bottom:20px;	
+}
+
+.imgplaces img{
+  border-radius:10px;
+  max-width:100%;
+  object-fit:cover;
 }
 
 #map {
