@@ -35,10 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	function showProject(i){
 		projects.forEach((item, index) => {
-			item.classList.toggle('active', index===i);
+			item.classList.toggle('this', index===i);
 		});
 	}
-	leftbtn.addEventListener('click',() => {
+	
+	if(leftbtn&&rightbtn&&imagec.length){
+	  leftbtn.addEventListener('click',() => {
 		cur=(cur-1+imagec.length) % imagec.length;
 		showProject(cur);
 	});
@@ -46,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		cur=(cur+1) % imagec.length;
 		showProject(cur);
 	});
-	showProject(cur);
 	
+	showProject(cur);
+	}
 }
