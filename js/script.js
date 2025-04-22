@@ -19,7 +19,7 @@ function initMap(){
   });
 
   const info=new google.maps.InfoWindow({
-    content:"<h2>This is a map</h2>",
+    content:"<h2>School Campus</h2><p>This is IIT's campus</p>",
   });
   marker.addListener("click", () => {
     info.open(map, marker);
