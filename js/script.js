@@ -27,22 +27,29 @@ function initMap(){
   });
 }
 
-let cur=1;
-showSlides(cur);
-function plusSlides(n) {
-	showSlides(cur+=n);
-}
-function curSlide(n) {
-	showSlides(cur=n);
-}
-
-function showSlides(n){
-	let i;
-	let slides=document.getElementsByClassName("imgplaces");
-  if (n > slides.length) {cur = 1}
-  if (n < 1) {cur = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}
+document.addEventListener("DOMContentLoaded", function () {
+	const imagecar=document.querySelectorAll('.imgplaces');
+	const leftbtn=document.querySelector('.lbtn');
+	const rightbtn=document.querySelector('.rbtn');
+	let cur=0;
+	
+	function showProject(i){
+		projects.forEach((item, index) => {
+			item.classList.toggle('this', index===i);
+		});
+	}
+	
+	if(leftbtn&&rightbtn&&imagecar.length){
+	  leftbtn.addEventListener('click',() => {
+		cur=(cur-1+imagecar.length) % imagecar.length;
+		showProject(cur);
+	});
+	
+	rightbtn.addEventListener('click',() => {
+		cur=(cur+1) % imagecar.length;
+		showProject(cur);
+	});
+	
+	showProject(cur);
+	}
+})
