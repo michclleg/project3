@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	function showImage(i){
 		imagecar.forEach((item, index) => {
-			item.classList.toggle('this', index===i);
+			item.classList.toggle('active', index===i);
 		});
 	}
 	
