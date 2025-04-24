@@ -187,14 +187,14 @@ body {
 
 #leftside {
   float:left;
-  width:30%;
+  width:25%;
   height:100%;
   display:flex;
 }
 
 #rightside {
   float:right;
-  width:70%;
+  width:65%;
   height:100%;
 }
 
