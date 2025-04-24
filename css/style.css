@@ -241,10 +241,12 @@ body {
 }
 
 .lbtn {
+  left:0;
   margin-right: 10px;
 }
   
 .rbtn {
+  right:0;
   margin-left: 10px;
 }
 
@@ -254,6 +256,7 @@ body {
 }
 
 .text {
+	position: absolute;
 	bottom:8px;
 	width:100%;
 	text-align:center;
