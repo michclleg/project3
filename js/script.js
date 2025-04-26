@@ -40,12 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 	
 	if(leftbtn&&rightbtn&&imagecar.length){
+	  
 	  leftbtn.addEventListener('click',() => {
 		cur=(cur-1+imagecar.length) % imagecar.length;
 		showImage(cur);
 	});
 	
-	rightbtn.addEventListener('click',() => {
+	  rightbtn.addEventListener('click',() => {
 		cur=(cur+1) % imagecar.length;
 		showImage(cur);
 	});
