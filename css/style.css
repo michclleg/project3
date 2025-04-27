@@ -232,16 +232,25 @@ body {
 
 .lbtn:hover,
 .rbtn:hover {
-	background-color:rgba(0,0,0,0.8);
+  background-color:rgba(0,0,0,0.8);
 }
 
 .text {
-	position: absolute;
-	bottom:8px;
-	width:100%;
-	text-align:center;
-	color:white;
-	padding:5px;
+  position: absolute;
+  bottom:8px;
+  width:100%;
+  text-align:center;
+  color:white;
+  padding:5px;
+}
+
+.text2 {
+  position: absolute;
+  top:8px;
+  width:100%;
+  text-align:center;
+  color:white;
+  padding:5px;
 }
 
 #map {
